@@ -1,8 +1,10 @@
+//function to remove item from cart
 function deleteListItem(item) {
 	    // remove li element (item) from ol element (item.parentNode)
  	    item.parentNode.removeChild(item);
 }
 
+//function to remove item from cart
 $(document).on("click", ".delete-item", function() {
     $(this).remove();
 });

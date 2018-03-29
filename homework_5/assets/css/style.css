@@ -1,0 +1,288 @@
+/* Basic Styling */
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Page container Dimensions */
+.container {
+  max-width: 1200px;
+  display: flex;
+}
+
+.shopping-cart {
+  width: 1000px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left Column */
+.left-column img {
+  position: absolute;
+  opacity: 0;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+
+.left-column {
+  width: 60%;
+  position: relative;
+}
+
+/* Right Column */
+
+.right-column {
+  width: 40%;
+  position: relative;
+  margin-top: 80px;
+}
+
+/* Text Organization */
+.product-description {
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* Colors Organization */
+
+.color-choose div {
+  display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+  display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span.active {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+/* Button Organization */
+
+/* Product Detail Size Button */
+.size-choose button {
+  border: 2px solid black;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+/* Product Detail Size Button Active */
+.size-choose button.active {
+  border: 2px solid blue;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+/* Product Detail Add To Cart Button */
+.add-to-cart button {
+  border: 2px solid black;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Product Detail Add To Cart Button Active */
+.add-to-cart button.active {
+  border: 2px solid blue;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Colors for color chooser */
+
+.color-choose input[type="radio"]#purple + label span {
+  background-color: #660066;
+}
+.color-choose input[type="radio"]#gray + label span {
+  background-color: #404040;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #000099;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #000000;
+}
+
+/* Main Bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.grocery-list{
+  width: 1000px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 20px 30px;
+  padding-top: 30px;
+  padding-left: 60px;
+  height: 150px;
+  display: flex;
+}
+
+.image {
+  padding-left: 60px;
+}
+
+.menu-left {
+    float: left;
+}
+
+.menu-right {
+  float:right
+}
+
+/* Text Dimensions for Product Detail Pages*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+/* Carousel */
+/* Carousel container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next/Previous Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.5s ease;
+}
+
+/* Next position */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text (different alignments) for carousel */
+.text_left {
+  color: gray;
+  font-size: 14px;
+  padding: 8px 12px;
+  padding-left: 100px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.text_center {
+  color: gray;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.text_right {
+  color: gray;
+  font-size: 14px;
+  padding: 8px 12px;
+  padding-right: 100px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+/* Circles at Bottom of carousel */
+.circle {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #717171;
+}

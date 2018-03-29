@@ -1,0 +1,71 @@
+/* Basic Styling */
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Top/Menu Bar on Each Page */
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Shopping cart dimensions */
+.grocery-list{
+  width: 1000px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dimensions of each item */
+.item {
+  padding: 20px 30px;
+  padding-top: 30px;
+  padding-left: 60px;
+  height: 150px;
+  display: flex;
+}
+
+.image {
+  padding-left: 60px;
+}
+
+.menu-left {
+    float: left;
+}
+
+.menu-right {
+  float:right
+}
+
+/* Text Specifications */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
