@@ -1,0 +1,78 @@
+html, body, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Text box style */
+h2 {
+	color:white;
+	text-align:center;
+	font-family:roboto;
+	font-size:30px;
+	color= white;
+	background-color: black;opacity:0.9;
+	line-height:40px;
+	display: table;
+	margin: auto; 
+}
+
+h2:first-child {
+	margin-top:0;
+}
+
+/* Separates icons from text in last infographic */
+.icon {
+	padding-top: 10%;
+}
+
+/* Left item positioning */
+.left {
+    position: absolute;
+    right: 20%;
+}
+
+/* Layout for last infographic */
+.container {
+    width:20%;
+    height:100px;
+    font-size:24px;
+    font-family:roboto;
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Centers text boxes */
+.centered {
+	top:0; 
+	bottom:0; 
+	left:0; 
+	right:0; 
+	margin:auto; 
+}
+
+/* Background color for last infographic */
+#background {
+	background: #00111C
+}
+
+/* First-level skrollables are positioned relative to window */
+.skrollable {
+	position:fixed;
+	z-index:100;
+}
+
+/* Second-level skrollables are positioned relative to their parent */
+.skrollable .skrollable {
+	position:absolute;
+}
+
+/* Third-level skrollables are positioned static */
+.skrollable .skrollable .skrollable {
+	position:static;
+}
